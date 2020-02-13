@@ -24,7 +24,16 @@ export default class Login extends Component{
         
         return(
             <section id="fundologin">
+                <div id="posicaoImagem">
+                <div id="imagemEmSi">
+                    
+                </div>
+                </div>
                 <section id="posicaoForm">
+                <div id="logoLogin">
+
+                </div>
+
                 <form>
                     <input 
                     className="input1"
@@ -44,11 +53,7 @@ export default class Login extends Component{
                 </form>
                 </section>
 
-                <div id="posicaoImagem">
-                <div id="imagemEmSi">
-                    
-                </div>
-                </div>
+                
                 
             </section>
         )
