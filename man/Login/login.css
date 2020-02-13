@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#fundologin{
+    height: 100%;
+    width: 100%;
+}
+
+#posicaoForm{
+    display: flex;
+    justify-content: center;
+}
+
+.input1{
+    position: absolute;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    top: 350px;
+    left: 150px;
+    /* border-bottom: #BFBFBD; */
+    border-bottom-color: #C2080F;
+}
+
+.input2{
+    position: absolute;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    top: 400px;
+    left: 150px;
+    border-color: #C2080F;
+}
+
+#botones{
+    position: absolute;
+    width: 200px;
+    top: 450px;
+    left: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #FF224B;
+    border-color: #FF224B;
+    color: black;
+    background-color: white;
+}
+
+#posicaoImagem{
+    position: relative;
+   
+    /* width: 1000px;
+    height: 800px; */
+}
+
+#imagemEmSi{
+    background-image: url("../Login/IMG_20200212_162756107.png");
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    height: 900px;
+    background-position: right;
+    background-size: 100%;
+    /* top: 0; */
+    /* bottom: 0;
+    right: 0; */
+    /* right: -200px; */
+    
+}
+
+#logoLogin{
+    background-image: url("../Login/logoEsboco.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 250px;
+    background-size: 80%;
+    position: absolute;
+    top: 220px;
+    left: 200px;
+}
