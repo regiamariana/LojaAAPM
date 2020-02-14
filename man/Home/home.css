@@ -38,8 +38,9 @@ padding: 0; */
     text-decoration: none;
     border-bottom:2px solid #000;
      justify-content: space-between; 
-    
+    position: absolute;
      font-size: 20px;
+     top: 17px;
 
 }
 
@@ -50,8 +51,8 @@ color: #fff;
     justify-content: space-between;
     list-style:none;
     position: absolute;
-    left: 270px;
-    
+    left: 200px;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #a2{
@@ -62,7 +63,8 @@ color: #fff;
         list-style:none;
         /* font-size: 20px; */
         position: absolute;
-        right: 300px;
+        right: 290px;
+        font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
@@ -76,4 +78,45 @@ a:-webkit-any-link{
     /* color: #6D6D6D; */
     border-bottom:3px solid #fff;
 }
+
+#imagemLogo{
+    background-image: url("../Home/logoEsbocoBranco.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 250px;
+    background-size: 60%;
+    position: absolute;
+    top: -7px;
+    left: 565px;
+}
+
+#posicaoImagem2{
+    position: relative;
+}
+
+#imagemEmSi2{
+    background-image: url("../Home/juau.png");
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    height: 900px;
+    background-position: right;
+    background-size: 100%;
+}
+
+#texto{
+    position: absolute;
+    bottom: 400px;
+    width: 450px;
+    right: 100px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#texto h1{
+    font-size: 50px;
+}
+
+#texto p{
+    font-size: 18px;
+}
+
 
