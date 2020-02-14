@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import '../Home/home.css'
 import Axios from "axios";
 
+
 export default class Home extends Component {
     render() {
 
         return (
             <section id="fundoHome">
+                <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto+Condensed&display=swap" rel="stylesheet"></link>
                 <header id="fundoHeader" >
                     <div className="nav1">
                         <div id="imagemLogo"></div>
@@ -24,7 +26,7 @@ export default class Home extends Component {
                     </nav>
                     </div>
                 </header>
-
+                <section id="corpoHome">
                 <div id="imagemPosicao2">
                     <div id="imagemEmSi2">
 
@@ -36,12 +38,13 @@ export default class Home extends Component {
                         Sobre a AAPM
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor est nibh, nec ultrices mauris pretium nec. Ut ultrices condimentum sodales. Vivamus eros quam, accumsan ut ex sed, consequat efficitur metus. Maecenas ac leo nec ex scelerisque pellentesque. Nulla convallis massa id quam consequat, sodales tempor dolor iaculis. Nam porttitor diam lectus, eu pellentesque quam semper id. Cras volutpat laoreet tellus vitae venenatis. Maecenas pulvinar tellus eget diam volutpat tempor. Vestibulum lacinia nisi nulla, vel imperdiet sapien tincidunt nec.
+                    A AAPM – Associação de Alunos, Ex-alunos, Pais e Mestres da Escola SENAI DE INFORMÁTICA é uma entidade sem fins lucrativos e com objetivos sociais e educativos. Para realizar estes objetivos a AAPM se propõe a mobilizar inúmeros recursos, disponibilizados por seus membros, para auxiliar a Escola, promovendo condições que principalmente permitam a melhoria do ensino, a assistência aos alunos e a programação de atividades culturais e de lazer.
 
                     </p>
                     {/* alt z para quebrar texto */}
                 </section>
 
+                </section>
 
             </section>
         )

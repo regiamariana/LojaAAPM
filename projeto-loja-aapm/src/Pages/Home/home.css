@@ -50,8 +50,9 @@ color: #fff;
     justify-content: space-between;
     list-style:none;
     position: absolute;
-    left: 270px;
-    
+    left: 290px;
+    top: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #a2{
@@ -63,7 +64,8 @@ color: #fff;
         /* font-size: 20px; */
         position: absolute;
         right: 300px;
-
+        top: 15px;
+        font-family: 'PT Sans Narrow', sans-serif;
 }
 
 a:-webkit-any-link{
@@ -76,4 +78,52 @@ a:-webkit-any-link{
     /* color: #6D6D6D; */
     border-bottom:3px solid #fff;
 }
+
+
+
+/* começo de uma nova era */
+
+
+
+#imagemLogo{
+    background-image: url("../../Assets/logoEsbocoBranco.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 250px;
+    background-size: 60%;
+    position: absolute;
+    top: -7px;
+    left: 700px;
+   
+}
+
+#posicaoImagem2{
+    position: relative;
+}
+
+#imagemEmSi2{
+    background-image: url("../../Assets/juau.png");
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    height: 722px;
+    background-position: right;
+    background-size: 100%;
+}
+
+#texto{
+    position: absolute;
+    bottom: 220px;
+    width: 450px;
+    right: 140px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#texto h1{
+    font-size: 50px;
+}
+
+#texto p{
+    font-size: 18px;
+}
+
 
