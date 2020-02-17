@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import '../Home/home.css'
 import Axios from "axios";
+import logo from "../../Assets/logoEsbocoBranco.png"
 
 
 export default class Home extends Component {
@@ -12,10 +13,10 @@ export default class Home extends Component {
                 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto+Condensed&display=swap" rel="stylesheet"></link>
                 <header id="fundoHeader" >
                     <div className="nav1">
-                        <div id="imagemLogo"></div>
+                        <img id="imagem" src={logo}/>
                     <nav id="header">
                     <ul>
-                        <li id="a1"><Link to="/">PRODUTOS</Link></li>
+                        <li id="a1"><Link to="/produtos">PRODUTOS</Link></li>
                     
 
 
