@@ -1,0 +1,40 @@
+#corpo{
+    padding: 70px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 2em;
+}
+
+#ca-produtos{
+    display: flex;
+    justify-content: center;
+}
+
+#ca-produtos input {
+    width: 500px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #C2080F;
+    font-size: 16px;
+}
+
+#botao-pai{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.botao-filho{
+    width: 250px;
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #C2080F;
+}

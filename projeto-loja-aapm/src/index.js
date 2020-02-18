@@ -4,9 +4,10 @@ import './index.css';
 import Login from './Pages/Login/login';
 import Home from './Pages/Home/home';
 import Produtos from './Pages/Produtos/produtos';
-
+import Adm from './PagesADM/Administrador';
 import PaginaADM from './PagesADM/Administrador';
-
+import cadastroAdm from './PagesADM/cadastroAdm';
+import atualizarAdm from './PagesADM/atualizarAdm';
 import App from './App';
 import { Route, Link, BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
@@ -19,6 +20,9 @@ const routing =(
             <Route exact path='/' component={Login} />
             <Route path='/home' component={Home} />
             <Route path='/produtos' component={Produtos} />
+            <Route path='/adm' component={Adm} />
+            <Route path='/cadastroadm' component={cadastroAdm} />
+            <Route path='/atualizaradm' component={atualizarAdm} />
             </Switch>
         </div>
     </Router>

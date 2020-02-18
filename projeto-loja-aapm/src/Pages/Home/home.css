@@ -21,6 +21,10 @@
 #header ul {
     list-style: none;
     /* justify-content: right; */
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    padding: 15px;
 }
 
 #header ul li{
