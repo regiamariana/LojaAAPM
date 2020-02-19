@@ -8,41 +8,45 @@ export default class Login extends Component{
     constructor(){
         super();
         this.state={
-            email: "teste@teste.com",
-            senha: "123",
+            email: "",
+            senha: "",
             erro: ""
         }
     }
+
+    
     
     mudarEstadoEmail = (event) =>{
         this.setState({email: event.target.value})
+        console.log({email: event.target.value})
     }
 
     mudarEstadoSenha = (event) =>{
-        this.setState({})
+        this.setState({senha: event.target.value})
+        console.log({senha: event.target.value})
     }
 
     efetuarLogin = (event) =>{
         event.preventDefault();
 
-        Axios.post("http://localhost:5000/api/login",{
-        email: this.state.email,
-        senha: this.state.senha
+        Axios.post("http://192.168.5.172:59607/api/usuarios",{
+        Email: this.state.email,
+        Senha: this.state.senha
     })
 
     .then(data => {
-        if (data.status == 100) {
+        if (data.status == 200) {
             localStorage.setItem("usuario-aapm", data.data.token);
 
-            if (ParseJwt().permissao === 'ADM') {
-                this.props.history.push('/administrador')
+            if (ParseJwt().permissao === 'Administrador') {
+                this.props.history.push('/adm')
             } else {
                 this.props.history.push('/home')
             }
 
             console.log(ParseJwt());
         }else{
-            console.log("erro")
+            console.log("erro - poetico")
         }
     })
     .catch(erro =>{
@@ -64,21 +68,25 @@ export default class Login extends Component{
 
                 </div>
 
-                <form>
+                <form onSubmit={this.efetuarLogin}>
                     <input 
                     className="input1"
-                    type="text"
-                    placeholder="insira seu email"
+                    type="email"
+                    placeholder="Insira seu Email"
+                    onChange={this.mudarEstadoEmail}
+                    value={this.state.email}
                     />
 
                     <input 
                     className="input2"
                     type="text"
-                    placeholder="insira sua senha"
+                    placeholder="Insira sua Senha"
+                    onChange={this.mudarEstadoSenha}
+                    value={this.state.senha}
                     />
 
                     <button id="botones">
-                            Login
+                            Poético.
                     </button>
                 </form>
                 </section>
