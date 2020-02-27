@@ -1,8 +1,4 @@
-/* body{
-    margin: 0px;
-    padding: 0px;
-    
-} */
+
 
 input, button{
     outline: none;
@@ -11,8 +7,7 @@ input, button{
 #fundologin{
     height: 100%;
     width: 100%;
-    /* margin: 0px;
-    padding: 0px; */
+    
 }
 
 #posicaoForm{
@@ -28,7 +23,6 @@ input, button{
     border-right: none;
     top: 350px;
     left: 150px;
-    /* border-bottom: #BFBFBD; */
     border-bottom-color: #C2080F;
     font-size: 20px;
 }
@@ -62,21 +56,17 @@ input, button{
 #posicaoImagem{
     position: relative;
    
-    /* width: 1000px;
-    height: 800px; */
+   
 }
 
 #imagemEmSi{
     background-image: url("../../Assets/IMG_20200212_162756107.png");
     background-repeat: no-repeat;
-    /* position: absolute; */
+
     height: 722px;
     background-position: right;
     background-size: 100%;
-    /* top: 0; */
-    /* bottom: 0;
-    right: 0; */
-    /* right: -200px; */
+
     
 }
 
@@ -92,3 +82,16 @@ input, button{
 }
 
 
+
+/* @media (min-width: 970){
+    #imagemEmSi{
+        background-size: 0%;
+    }
+} */
+/* :root{
+@media (min-width: 970){
+    #imagemEmSi{
+       background-image: none;
+    }
+}
+} */

@@ -8,7 +8,6 @@
     padding: 0;
 }
 
-
 #bodyProdutos{
     width: 100%;
     height: 500px;
@@ -17,7 +16,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 /* .classProduto{
@@ -25,7 +23,6 @@
 } */
 
 #imgProduto{
-    width: 400px;
     height: 400px;
     /* position: absolute; */
     left: 100px;
@@ -50,6 +47,6 @@
     left: 550px;
     font-size: 20px;
     top: 100px;
-    padding: 1em 15em;
+    padding: 1em 15em 3em;
 }
 

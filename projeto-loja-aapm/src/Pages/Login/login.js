@@ -26,10 +26,12 @@ export default class Login extends Component{
         console.log({senha: event.target.value})
     }
 
+    // MÉTODO DE LOGIN
+
     efetuarLogin = (event) =>{
         event.preventDefault();
 
-        Axios.post("http://192.168.5.172:59607/api/usuarios",{
+        Axios.post("http://192.168.3.230:59607/api/usuarios",{
         Email: this.state.email,
         Senha: this.state.senha
     })
@@ -54,6 +56,8 @@ export default class Login extends Component{
         console.log(erro);
     })
     }
+
+    // RENDERIZAÇÃO DO CÓDIGO
     render(){
         
         return(
@@ -67,7 +71,8 @@ export default class Login extends Component{
                 <div id="logoLogin">
 
                 </div>
-
+                
+                {/* FORMULÁRIO */}
                 <form onSubmit={this.efetuarLogin}>
                     <input 
                     className="input1"
@@ -79,14 +84,14 @@ export default class Login extends Component{
 
                     <input 
                     className="input2"
-                    type="text"
+                    type="password"
                     placeholder="Insira sua Senha"
                     onChange={this.mudarEstadoSenha}
                     value={this.state.senha}
                     />
 
                     <button id="botones">
-                            Poético.
+                            Login
                     </button>
                 </form>
                 </section>

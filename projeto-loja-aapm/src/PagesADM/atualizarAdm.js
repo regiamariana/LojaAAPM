@@ -37,7 +37,7 @@ export default class PagesADM extends Component {
 
   efetuarAtualizar = (event) => {
     event.preventDefault();
-    Axios.put("http://localhost:5000/api/atualizar/" + this.state.id, {
+    Axios.put("http://192.168.3.230:59607/api/atualizar/" + this.state.id, {
       nome: this.state.nome,
       valor: this.state.valor,
       descricao: this.state.descricao,

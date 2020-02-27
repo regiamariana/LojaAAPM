@@ -10,29 +10,7 @@ export default class PagesADM extends Component {
         super();
         this.state = {
             produtos : [
-                {
-                    id: 1,
-                    nome: "combo 01",
-                    valor: 55.00 ,
-                    descrição: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere porta lorem non pulvinar. Nulla ut libero sit amet nulla blandit faucibus. Donec eget urna lorem. Ut sagittis tortor eu porta dapibus. Duis pharetra feugiat tellus, vitae posuere augue laoreet id. Nunc congue semper massa at porttitor.",
-                    imagem: "https://assets.adidas.com/images/w_600,f_auto,q_auto:sensitive,fl_lossy/c0b5234b4053469285dea83500d56eda_9366/Camiseta_3_Stripes_Branco_CW1203_01_laydown.jpg",
-                    status: true
-                },
-                {
-                    id: 2,
-                    nome: "combo 02",
-                    valor: 20.30 ,
-                    descrição: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere porta lorem non pulvinar. Nulla ut libero sit amet nulla blandit faucibus. Donec eget urna lorem. Ut sagittis tortor eu porta dapibus. Duis pharetra feugiat tellus, vitae posuere augue laoreet id. Nunc congue semper massa at porttitor.",
-                    imagem: "https://www.luminatibrindes.com.br/produtos-brindes/copo-planet-8801.jpg",
-                    status: true
-                }
             ],
-            id: "",
-            nome: "",
-            valor: "" ,
-            descricao: "",
-            imagem: "",
-            status: ""
         }
     }
 
@@ -41,7 +19,7 @@ export default class PagesADM extends Component {
     }
 
     listarProdutos = () => {
-        Axios.get('http://localhost:5000/api/produtos',{
+        Axios.get('http://192.168.3.230:59607/api/produtos',{
             headers: { 'Authorization': 'Bearer ' + localStorage.getItem('usuario-aapm')}
         })
         .then(response => {
@@ -87,7 +65,7 @@ export default class PagesADM extends Component {
 
     efetuarAtualizar = (event) =>{
         event.preventDefault();
-        Axios.put("http://localhost:5000/api/atualizar",{
+        Axios.put("http://192.168.3.230:59607/api/atualizar",{
             nome: this.state.nome,
             valor: this.state.valor,
             descricao: this.state.descricao,
@@ -131,10 +109,10 @@ export default class PagesADM extends Component {
                         return(
                         <section>
                         <p key={element.id} />
-                        <img id="imgProduto" className="classProduto" src={element.imagem} />
                         <h1 id="h1Produto" className="classProduto">{element.nome}</h1>
+                        <img id="imgProduto" className="classProduto" src={"http://192.168.3.230:59607/"+element.imagem}  />
                         <h2 id="h2Produto" className="classProduto">R$ {element.valor}</h2>
-                        <p id="pProduto" className="classProduto">{element.descrição}</p>
+                        <p id="pProduto" className="classProduto">{element.descricao}</p>
                         </section>
                         )
                     })}
